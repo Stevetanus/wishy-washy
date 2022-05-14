@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Search from "../components/Search";
 import Picture from "../components/Picture";
-
+// require("dotenv").config();
 const Homepage = () => {
   const [input, setInput] = useState("");
   let [data, setData] = useState(null);
