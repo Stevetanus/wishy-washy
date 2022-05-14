@@ -26,10 +26,59 @@ ul {
     padding: 0.25rem 0.5rem;
     font-size: 2rem;
     border: none;
-    background-color: rgb(66, 143, 187);
+    background-color: rgba(66, 143, 187, 0.7);
     color: white;
     cursor: pointer;
   }
+  button:hover {
+    background-color: rgba(66, 143, 187, 1);
+  }
+}
+
+.about {
+  width: 50vw;
+  transform: translateX(50%);
+  height: 0vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  width: 100%;
+  height: 5%;
+  justify-content: space-between;
+}
+
+.project__img {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: space-between;
+}
+.project__img img {
+  width: 72px;
+  height: 72px;
+}
+.about h3,
+.about .img {
+  padding-bottom: 3rem;
+  height: 30%;
+}
+.about h3 {
+  padding-top: 5%;
+  padding-bottom: 2.5%;
+}
+.about h2 {
+  padding-top: 5%;
+  height: 20%;
+}
+.about a {
+  color: rgba(66, 143, 187, 1);
+}
+.about span {
+  color: #288;
 }
 
 @import "./nav";

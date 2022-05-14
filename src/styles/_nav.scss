@@ -1,5 +1,11 @@
 nav {
   background-color: rgb(120, 169, 192);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    margin-left: 3rem;
+  }
   ul {
     display: flex;
     justify-content: flex-end;
@@ -7,7 +13,7 @@ nav {
     li {
       padding: 0.5rem 1rem;
       a {
-        font: size 1.5rem;
+        font-size: 1.5rem;
         color: white;
       }
     }

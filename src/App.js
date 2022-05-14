@@ -12,6 +12,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
+        <Route path="/Photo-website" element={<Homepage />}></Route>
         <Route path="/about" element={<About />}></Route>
       </Routes>
       <Footer />

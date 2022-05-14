@@ -8,11 +8,14 @@
   button {
     font-size: 2rem;
     padding: 0.25rem;
-    border: 3px solid rgb(49, 165, 219);
+    border: 1px solid rgb(49, 165, 219);
   }
   button {
-    background-color: rgb(37, 120, 158);
+    background-color: rgba(37, 120, 158, 0.7);
     color: white;
     cursor: pointer;
+  }
+  button:hover {
+    background-color: rgba(37, 120, 158, 1);
   }
 }

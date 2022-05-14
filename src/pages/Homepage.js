@@ -8,7 +8,6 @@ const Homepage = () => {
   let [page, setPage] = useState(1);
   let [currentSearch, setCurrentSearch] = useState("");
   const auth = process.env.REACT_APP_AUTH;
-  // const auth = "563492ad6f91700001000001fd9a40173e354cd2a0148d40cc7b819f";
   const initialURL = "https://api.pexels.com/v1/curated?page=1&per_page=15";
   const searchURL = `https://api.pexels.com/v1/search?query=${currentSearch}&per_page=15&page=1`;
 
@@ -50,6 +49,7 @@ const Homepage = () => {
   useEffect(() => {
     search(initialURL);
   }, []);
+
   useEffect(() => {
     if (currentSearch === "") {
       search(initialURL);
@@ -59,7 +59,7 @@ const Homepage = () => {
   }, [currentSearch]);
 
   return (
-    <div style={{ minHeight: "95vh" }}>
+    <div style={{ minHeight: "100vh" }}>
       <Search
         search={() => {
           setCurrentSearch(input);
