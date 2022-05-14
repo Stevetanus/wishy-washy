@@ -7,7 +7,7 @@ const Homepage = () => {
   let [data, setData] = useState(null);
   let [page, setPage] = useState(1);
   let [currentSearch, setCurrentSearch] = useState("");
-  // const auth = process.env.REACT_APP_AUTH;
+  const auth = process.env.REACT_APP_AUTH;
   const initialURL = "https://api.pexels.com/v1/curated?page=1&per_page=15";
   const searchURL = `https://api.pexels.com/v1/search?query=${currentSearch}&per_page=15&page=1`;
 
@@ -18,7 +18,7 @@ const Homepage = () => {
       method: "GET",
       headers: {
         Accept: "application/json",
-        // Authorization: auth,
+        Authorization: auth,
       },
     });
     let parseData = await dataFetch.json();
@@ -38,7 +38,7 @@ const Homepage = () => {
       method: "GET",
       headers: {
         Accept: "application/json",
-        // Authorization: auth,
+        Authorization: auth,
       },
     });
     let parseData = await dataFetch.json();
@@ -56,6 +56,7 @@ const Homepage = () => {
     } else {
       search(searchURL);
     }
+    // eslint-disable-next-line
   }, [currentSearch]);
 
   return (
