@@ -157,6 +157,8 @@ nav ul li a {
       -ms-flex-align: center;
           align-items: center;
   padding: 3rem 0rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .search input,
